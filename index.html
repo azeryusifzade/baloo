@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baloo Zoo Shop</title>
+  <link rel="stylesheet" href="style_az.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7/css/flag-icons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="Новая папка\ostalnoe\logo icon.png">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="Новая папка/ostalnoe/logotype.png" alt="Baloo Logo" />
+    </div>
+
+    <div class="nav-center" id="navMenu">
+      <a href="#home">Əsas</a>
+      <a href="#address">Ünvan</a>
+      <a href="#contact">Əlaqə</a>
+    </div>
+
+    <div class="lang-wrapper">
+      <div class="lang-select" id="langSelect">
+        <span class="fi fi-az flag" id="currentFlag"></span>
+        <span class="lang-text" id="currentLang">AZE</span>
+        <span class="dropdown-triangle"></span>
+      </div>
+      <div class="lang-menu" id="langMenu">
+        <ul>
+          <li data-code="az" data-flag="fi-az" data-text="AZE"><span class="fi fi-az"></span> Azərbaycan</li>
+          <li data-code="gb" data-flag="fi-gb" data-text="ENG"><span class="fi fi-gb"></span> English</li>
+          <li data-code="ru" data-flag="fi-ru" data-text="RUS"><span class="fi fi-ru"></span> Русский</li>
+        </ul>
+      </div>
+    </div>
+
+    <button class="burger" id="burger">&#9776;</button>
+  </nav>
+
+  <section id="home">
+    <div class="bg">
+      <img src="Новая папка/ostalnoe/bg baloo.png" alt="Hero Background" />
+    </div>
+  </section>
+
+  <main class="main-content">
+    <div class="products-container">
+      <!-- Dogs and Puppies Row -->
+      <div class="products-row">
+        <div class="dog-section">
+          <!-- Dog Products -->
+          <div class="dog-group">
+            <div class="category-header dog-color">
+              <span>Yetkin itlər üçün</span>
+              <img class = "dog-adult" src="Новая папка/kataloq ana sehife/sobaka1k.png" alt="Dog" />
+            </div>
+            <div class="category-actions">
+              <a href="kataloq yetkin it quru yem/index.html" class="action-button dog-action">
+                <img src="kataloq yetkin it quru yem/images/CARNILOVE LAMB WILD BOAR ADULT DOG-1kq.png" alt="Dog Care" />
+                <h3>Yetkin itlər üçün quru yem</h3>
+              </a>
+              <a href="kataloq yetkin it yas yem/index.html" class="action-button dog-action">
+                <img class="yas-yem-it" src="kataloq yetkin it yas yem/images/CARNAVAL KONSERVA ADULF LAMB 400GR.png" alt="Dog Food" />
+                <h3>Yetkin itlər üçün yaş yem</h3>
+              </a>
+            </div>
+          </div>
+
+          <!-- Puppy Products -->
+          <div class="puppy-group">
+            <div class="category-header dog-color">
+              <span>Bala itlər üçün</span>
+              <img src="Новая папка/kataloq ana sehife/shenok2k.png" alt="Puppy" />
+            </div>
+            <div class="category-actions">
+              <a href="kataloq bala it quru yem/index.html" class="action-button dog-action">
+                <img src="kataloq bala it quru yem/images/CARNAVAL PUPPY LAMB QUZU BALA IT-1kq.png" alt="Puppy Care" />
+                <h3>Bala itlər quru yem</h3>
+              </a>
+              <a href="kataloq bala it yas yem/index.html" class="action-button dog-action">
+                <img src="kataloq bala it yas yem/images/MONGE KUCUK IT UCUN TOYUQ DUYU ETI JELE 100GR.png" alt="Puppy Food" />
+                <h3>Bala itlər üçün yaş yem</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cats and Kittens Section -->
+        <div class="cat-section">
+          <!-- Cat Products -->
+          <div class="cat-group">
+            <div class="category-header cat-color">
+              <span>Yetkin pişiklər üçün</span>
+              <img class="cat-image" src="Новая папка/kataloq ana sehife/8623056.png" alt="Cat" />
+            </div>
+            <div class="category-actions">
+              <a href="kataloq yetkin pisik quru yem/index.html" class="action-button cat-action">
+                <img src="kataloq yetkin pisik quru yem/images/HERBAMAKS ADULT CHICKEN TOYUQ PISIK.png" alt="Cat Care" />
+                <h3>Yetkin pişiklər üçün quru yem</h3>
+              </a>
+              <a href="kataloq yetkin pisik yas yem/index.html" class="action-button cat-action">
+                <img src="kataloq yetkin pisik yas yem/images/MONGE STERILIZE PISIK UCUN JELE QUZU ET 85GR.png" alt="Cat Food" />
+                <h3>Yetkin pişiklər üçün yaş yem</h3>
+              </a>
+            </div>
+          </div>
+
+          <!-- Kitten Products -->
+          <div class="kitten-group">
+            <div class="category-header cat-color">
+              <span>Bala pişiklər üçün</span>
+              <img class="kitten-img" src="Новая папка/kataloq ana sehife/closeup-shot-ginger-kitten-with-green-eyes-white-background-removebg-preview.png" alt="Kitten" />
+            </div>
+            <div class="category-actions">
+              <a href="kataloq bala pisik quru yem/index.html" class="action-button cat-action">
+                <img src="kataloq bala pisik quru yem/images/CARNAVAL KITTEN CHICKEN BALA PISIK 1.5KQ.png" alt="Kitten Care" />
+                <h3>Bala pişiklər üçün quru yem</h3>
+              </a>
+              <a href="kataloq bala pisik yas yem/index.html" class="action-button cat-action">
+                <img src="kataloq bala pisik yas yem/images/ANIMONDA CARNY BALA PISIK 400GR.png" alt="Kitten Food" />
+                <h3>Bala pişiklər üçün yaş yem</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fish and Birds Row -->
+      <div class="single-categories">
+        <a href="kataloq gemirici/index.html" class="single-category-item fish-color">
+          <img src="Новая папка/kataloq ana sehife/image-removebg-preview.png" alt="Fish" />
+          <span>Gəmiricilər üçün yem</span>
+        </a>
+        <a href="kataloq popuqay/index.html" class="single-category-item bird-color">
+          <img src="Новая папка/kataloq ana sehife/popuqay.png" alt="Bird" />
+          <span>Quşlar üçün yem</span>
+        </a>
+        <a href="kataloqBaliq/index.html" class="single-category-item baliqlar-color">
+          <img src="Новая папка/kataloq ana sehife/baliq.png"/>
+          <span>Balıqlar üçün yem</span>
+        </a>
+        <a href="vetaptek/index.html" class="single-category-item vetaptek-color">
+          <img src="Новая папка/ostalnoe/ZOOVITAL GLUTAMINE SUPERIOR PASTE 100 g.png"/>
+          <span>Vetaptek</span>
+        </a>
+        <a href="kataloq aksesuarlar/index.html" class="single-category-item aksesuar-color">
+          <img src="Новая папка/ostalnoe/kruqliy_raznocvetniy_oyuncaq-removebg-preview.png" />
+          <span>Aksesuarlar</span>
+        </a>
+        <a href="kataloq qumlar/index.html" class="single-category-item aksesuar-color">
+          <img src="vetaptek/images/CARNAVAL QUM LAVANDER 10LT.png" />
+          <span>Qumlar</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <section class="veterinar-section">
+    <div class="layer">
+      <img src="https://vetmanager.ru/wp-content/uploads/2020/10/options-huge-vet-bill.jpg" alt="Veterinary Background" />
+    </div>
+    <div class="veterinar-content">
+      <img src="Новая папка/ostalnoe/baloo + pic.png" class="vet-logo">
+      <h1>Veterinar klinikası</h1>
+      <h4>Klinikanın iş saatları: 11:00 - 19:30</h4>
+      
+      <div class="vet-services">
+        <div class="vet-service">
+          <img src="Новая папка/vet cards/grooming.png" />
+        </div>
+        <div class="vet-service">
+          <img src="Новая папка/vet cards/umumi muayine.png"/>
+        </div>
+        <div class="vet-service">
+          <img src="Новая папка/vet cards/dis muayinesi.png" />
+        </div>
+        <div class="vet-service">
+          <img src="Новая папка/vet cards/cerrahi emeliyyat.png" />
+        </div>
+        <div class="vet-service">
+          <img src="Новая папка/vet cards/uzi card aze.png" />
+        </div>
+      </div>
+      
+      <a href="https://wa.me/+994553851983" target="_blank" class="register-button">Qeydiyyat</a>
+    </div>
+  </section>
+
+  <section id="address" class="address-section">
+    <h1>Ünvan</h1>
+    <div class="address-content">
+      <div class="qr-section">
+        <img src="Новая папка\qr codes\unvan qr code.png" alt="QR Code" />
+      </div>
+      <div class="address-info">
+        <h1>Çernyaevski küç. 10</h1>
+        <h1>"FoxCoffee" və "Rossmann"ın yanı</h1>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d189.9153067816803!2d49.87603600677424!3d40.39456194220541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2saz!4v1751883852559!5m2!1sru!2saz"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+      <div class="baloo-im">
+        <img src="baloo-im.jpg">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h1>Bizimlə əlaqə</h1>
+    <div class="contact-content">
+      <div class="contact-text">
+        <h1>Sifariş vermək istəyirsiniz?</h1>
+        <h1>Bizimlə əlaqə saxlayın!</h1>
+      </div>
+      <div class="contact-images">
+        <img src="Doggie.png" alt="Contact Person" />
+        <img src="Новая папка/qr codes/elaqe qr code.png" alt="QR Code" />
+      </div>
+      <p class="qr-note">QR-code işləmir? Düyməni basın!</p>
+      <a href="https://wa.me/+994553851983" target="_blank" class="whatsapp-button">WhatsApp</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-item-n">
+        <img src="Новая папка/icons/Phone.png" alt="Phone" />
+        <h3><a href="tel:+994552756985" class="phone-link">+994552756985</a></h3>
+      </div>
+      <div class="footer-item-w">
+        <a href="https://wa.me/+994552756985">
+        <img src="Новая папка/icons/whatsapp.png" alt="WhatsApp" />
+        <h3>+994552756985</h3>
+        </a>
+      </div>
+      <div class="footer-item">
+        <img src="Новая папка/icons/Phone.png" alt="Phone" />
+        <h3><a href="tel:+994553851983" class="phone-link">+994553851983</a></h3>
+      </div>
+      <div class="footer-item">
+        <a href="https://wa.me/+994553851983">
+          <img src="Новая папка/icons/whatsapp.png" alt="WhatsApp" />
+          <h3>+994553851983</h3>
+        </a>
+      </div>
+      <div class="footer-item">
+        <a href="https://instagram.com/baloozoovet">
+          <img src="Новая папка/icons/Instagram.png" fill = "6D6C6C" alt="Instagram" />
+          <h3>@baloozoovet</h3>
+        </a>
+      </div>
+      <div class="footer-item">
+        <a href="mailto:baloo@mail.com">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="#1e1e1e">
+            <path d="M2 4h20c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H2c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 2v.01L12 13 22 6.01V6H2zm0 12h20V8.24l-9.4 6.27a1 1 0 0 1-1.2 0L2 8.24V18z"/>
+          </svg>
+          <h3>shopbaloozoo@gmail.com</h3>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Burger menu
+    const burger = document.getElementById('burger');
+    const navMenu = document.getElementById('navMenu');
+    burger.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+
+    // Language menu
+    const langSelect = document.getElementById('langSelect');
+    const langMenu = document.getElementById('langMenu');
+    const currentFlag = document.getElementById('currentFlag');
+    const currentLang = document.getElementById('currentLang');
+    const langItems = document.querySelectorAll('#langMenu li');
+
+    langSelect.addEventListener('click', () => {
+      langMenu.classList.toggle('show');
+    });
+
+    langItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const selectedFlag = item.getAttribute('data-flag');
+        const selectedText = item.getAttribute('data-text');
+        const selectedCode = item.getAttribute('data-code');
+
+        currentFlag.className = `fi ${selectedFlag} flag`;
+        currentLang.textContent = selectedText;
+
+        localStorage.setItem('selectedLang', JSON.stringify({
+          flag: selectedFlag,
+          text: selectedText,
+          code: selectedCode
+        }));
+
+        if (selectedCode === 'az') {
+          window.location.href = 'index.html';
+        } else if (selectedCode === 'gb') {
+          window.location.href = 'index_en.html';
+        } else if (selectedCode === 'ru') {
+          window.location.href = 'index_ru.html';
+        }
+
+        langMenu.classList.remove('show');
+      });
+    });
+
+    // Load saved language
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedLang = JSON.parse(localStorage.getItem('selectedLang'));
+      if (savedLang) {
+        currentFlag.className = `fi ${savedLang.flag} flag`;
+        currentLang.textContent = savedLang.text;
+      }
+    });
+
+    // Close language menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!langSelect.contains(e.target)) {
+        langMenu.classList.remove('show');
+      }
+    });
+
+    // Close burger menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!burger.contains(e.target) && !navMenu.contains(e.target)) {
+        navMenu.classList.remove('show');
+      }
+    });
+  </script>
+</body>
+</html>

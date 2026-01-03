@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baloo Vet-Aptek</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo icon copy.png">
+  </head>
+  <body>
+    <div class="background-animation">
+      <div class="floating-shape shape-1"></div>
+      <div class="floating-shape shape-2"></div>
+      <div class="floating-shape shape-3"></div>
+      <div class="floating-shape shape-4"></div>
+      <div class="floating-shape shape-5"></div>
+    </div>
+
+    <div class="container">
+      <header class="page-header">
+        <div class="header-content">
+          <div class="paw-icon">🐾</div>
+          <h1 class="main-title">Vet-aptek</h1>
+          <p class="subtitle">Ev heyvanınız üçün kateqoriyanı seçin</p>
+        </div>
+      </header>
+
+      <div class="buttons-grid">
+        <a href="kataloq lekarstva adult it\index.html">
+          <button class="animal-button dog-button" data-category="adult-dogs">
+          <div class="button-background"></div>
+          <div class="button-content">
+            <div class="text-section">
+              <span class="button-text">İtlər üçün</span>
+              <span class="button-subtitle">Adult Dogs</span>
+            </div>
+            <div class="image-section">
+              <img src="https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Dog" class="animal-image">
+              <div class="image-glow"></div>
+            </div>
+          </div>
+          <div class="ripple-effect"></div>
+        </button>
+        </a>
+        
+        <a href="kataloq bala it lekarstva\index.html">
+          <button class="animal-button dog-button puppy" data-category="puppies">
+          <div class="button-background"></div>
+          <div class="button-content">
+            <div class="text-section">
+              <span class="button-text">Bala itlər üçün</span>
+              <span class="button-subtitle">Puppies</span>
+            </div>
+            <div class="image-section">
+              <img src="puppy.jpg" alt="Puppy" class="animal-image">
+              <div class="image-glow"></div>
+            </div>
+          </div>
+          <div class="ripple-effect"></div>
+        </button>
+        </a>
+        
+        <a href="kataloq adult  pisik qulluq\index.html">
+          <button class="animal-button cat-button" data-category="adult-cats">
+          <div class="button-background"></div>
+          <div class="button-content">
+            <div class="text-section">
+              <span class="button-text">Pişiklər üçün</span>
+              <span class="button-subtitle">Adult Cats</span>
+            </div>
+            <a href="xxxxxx" class="image-section">
+              <img src="catadult.jpg" alt="Cat" class="animal-image">
+              <div class="image-glow"></div>
+            </a> 
+          </div>
+          <div class="ripple-effect"></div>
+        </button>
+        </a>
+        
+        <a href="kataloq pisik bala\index.html">
+          <button class="animal-button cat-button kitten" data-category="kittens">
+          <div class="button-background"></div>
+          <div class="button-content">
+            <div class="text-section">
+              <span class="button-text">Bala pişiklər üçün</span>
+              <span class="button-subtitle">Kittens</span>
+            </div>
+            <div class="image-section">
+              <img src="kitten.jpg" alt="Kitten" class="animal-image">
+              <div class="image-glow"></div>
+            </div>
+          </div>
+          <div class="ripple-effect"></div>
+        </button>
+        </a>
+      </div>
+
+    </div>
+
+    <script>
+      // Ripple effect
+      document.querySelectorAll('.animal-button').forEach(button => {
+        button.addEventListener('click', function(e) {
+          const ripple = this.querySelector('.ripple-effect');
+          const rect = this.getBoundingClientRect();
+          const size = Math.max(rect.width, rect.height);
+          const x = e.clientX - rect.left - size / 2;
+          const y = e.clientY - rect.top - size / 2;
+          
+          ripple.style.width = ripple.style.height = size + 'px';
+          ripple.style.left = x + 'px';
+          ripple.style.top = y + 'px';
+          ripple.classList.add('animate');
+          
+          setTimeout(() => {
+            ripple.classList.remove('animate');
+          }, 600);
+          
+          // Button selection feedback
+          this.classList.add('selected');
+          setTimeout(() => {
+            this.classList.remove('selected');
+          }, 300);
+        });
+      });
+
+      // Floating shapes animation
+      document.querySelectorAll('.floating-shape').forEach((shape, index) => {
+        shape.style.animationDelay = `${index * 0.5}s`;
+      });
+    </script>
+  </body>
+</html>
